@@ -1,0 +1,17 @@
+pcap-triage: 145 packets, 85 flows, 80204 bytes, 7.3s
+tcp 133, udp 12, dns queries 12
+
+SCANNERS (2)
+  203.0.113.9     port scan: 40 distinct targets on 1 hosts, 40 SYNs
+  198.51.100.77   host sweep: 30 distinct targets on 30 hosts, 30 SYNs
+
+CLEARTEXT CREDENTIALS (2), passwords are never printed
+  ftp   10.0.0.20 -> 10.0.0.5:21  user=backup-svc  password=11 chars
+  http  10.0.0.21 -> 10.0.0.8:8080  user=alice  password=12 chars
+
+TOP FLOWS BY BYTES
+  10.0.0.30:50003 -> 192.0.2.50:443  tcp  75240 bytes, 60 packets
+  10.0.0.20:50001 -> 10.0.0.5:21  tcp  143 bytes, 2 packets
+  10.0.0.21:50002 -> 10.0.0.8:8080  tcp  141 bytes, 1 packets
+  10.0.0.30:53001 -> 10.0.0.1:53  udp  75 bytes, 1 packets
+  10.0.0.30:53004 -> 10.0.0.1:53  udp  75 bytes, 1 packets
