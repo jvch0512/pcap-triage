@@ -2,6 +2,8 @@
 
 Someone hands you a packet capture and says "is anything wrong in here?". pcap-triage answers the first five minutes of that question: who is scanning, which logins crossed the wire in cleartext, and where the bytes went.
 
+![Terminal demo of pcap-triage on its sample data](docs/demo.svg)
+
 **Live demo:** https://jvch0512.github.io/pcap-triage/ (a report on the synthetic capture in `examples/`)
 
 C11, no dependencies, one binary. Reads classic pcap files (Ethernet or raw IPv4; VLAN tags handled).
